@@ -8,12 +8,6 @@ class AppCustomizedChart extends StatefulWidget {
 }
 
 class _AppCustomizedChartState extends State<AppCustomizedChart> {
-  List<Color> gradientColors = [
-    const Color(0xff23b6e6),
-    const Color(0xff02d39a),
-  ];
-
-  bool showAvg = false;
 
   @override
   Widget build(BuildContext context) {
