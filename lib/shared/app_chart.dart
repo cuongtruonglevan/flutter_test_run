@@ -8,7 +8,6 @@ class AppCustomizedChart extends StatefulWidget {
 }
 
 class _AppCustomizedChartState extends State<AppCustomizedChart> {
-
   @override
   Widget build(BuildContext context) {
     return Stack(
