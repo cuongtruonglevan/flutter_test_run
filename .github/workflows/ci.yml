@@ -7,8 +7,9 @@ on:
       - master
 
 jobs:
-  build_apk:
-    runs-on: ubuntu-latest
+  build:
+    name: Build Apps
+    runs-on: macos-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
