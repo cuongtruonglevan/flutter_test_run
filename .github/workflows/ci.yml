@@ -40,9 +40,14 @@ jobs:
           ln -s ../Runner.app
           cd ..
           zip -r app.ipa Payload
-      - name: Upload artifact
+      - name: Upload apk artifact
         uses: actions/upload-artifact@v1
         with:
-          name: app-release
-          path: build/app/outputs/apk/release/*.apk,build/ios/iphoneos/app.ipa
+          name: apk-release
+          path: build/app/outputs/apk/release/*.apk
+      - name: Upload ipa artifact
+        uses: actions/upload-artifact@v1
+        with:
+          name: ipa-release
+          path: build/ios/iphoneos/app.ipa
           
