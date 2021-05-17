@@ -43,11 +43,10 @@ jobs:
       - name: Upload apk artifact
         uses: actions/upload-artifact@v1
         with:
-          name: apk-release
-          path: build/app/outputs/apk/release/*.apk
+          name: release-apk
+          path: build/app/outputs/apk/release/app-release.apk
       - name: Upload ipa artifact
         uses: actions/upload-artifact@v1
         with:
-          name: ipa-release
+          name: release-ipa
           path: build/ios/iphoneos/app.ipa
-          
